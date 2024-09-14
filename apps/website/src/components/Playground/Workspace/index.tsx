@@ -36,7 +36,7 @@ export default function Workspace({ ffmpeg: _ffmpeg }: WorkspaceProps) {
   const refreshDir = async (curPath: string) => {
     if (ffmpeg.loaded) {
       setNodes(
-        (await ffmpeg.listDir(curPath)).filter(({ name }) => ![".","tmp","home","proc","dev"].includes(name))
+        (await ffmpeg.listDir(curPath)).filter(({ name }) => ![".", "home", "dev", "proc", "tmp"].includes(name))
       );
     }
   };
