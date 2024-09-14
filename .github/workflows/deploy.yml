@@ -15,12 +15,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          path: master
       - uses: actions/setup-node@v4
         with:
           node-version: 18
 
       - name: Install dependencies
-        run: cd ffmpeg-online && npm install --legacy-peer-deps
+        run: npm install --legacy-peer-deps
       - name: Build website
         run: npm run build
 
