@@ -146,7 +146,7 @@ export default function FileSystemManager({
               </Box>
             </Stack>
             {/*<Typography>{`Path: ${path}`}</Typography>*/}
-            <List style={{ height: 480, overflowX: "auto" }}>
+            <List style={{ height: 570, overflowX: "auto" }}>
               {nodes.map(({ name, isDir }, index) =>
                 isDir ? (
                   <ListItemButton key={index} onClick={onDirClick(name)}>
