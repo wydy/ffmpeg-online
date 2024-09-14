@@ -21,7 +21,7 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: cd master && npm install --legacy-peer-deps
+        run: cd master && npm install
       - name: Build website
         run: cd master && npm run build
 
