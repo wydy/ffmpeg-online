@@ -6,7 +6,6 @@ import CreateNewFolderIcon from "@mui/icons-material/CreateNewFolder";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import UploadFileIcon from "@mui/icons-material/UploadFile";
 import UploadIcon from "@mui/icons-material/Upload";
-<script src="/static/asset/coi-serviceworker.min.js"></script>
 
 # Playground
 

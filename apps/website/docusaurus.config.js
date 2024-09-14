@@ -164,9 +164,8 @@ const config = {
   themes: ["@docusaurus/theme-live-codeblock"],
   scripts: [
     {
-      src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8688083214014126",
-      async: true,
-      crossorigin: "anonymous",
+      src: "/static/asset/coi-serviceworker.min.js",
+      async: false
     },
   ],
 };
