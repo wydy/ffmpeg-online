@@ -15,15 +15,14 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          path: ../../
       - uses: actions/setup-node@v4
         with:
           node-version: 18
 
       - name: Install dependencies
-        run: cd ../ && npm install --legacy-peer-deps
+        run: npm install --legacy-peer-deps --save ./ffmpeg-online
       - name: Build website
-        run: cd ../ && npm run build
+        run: npm run build
 
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
