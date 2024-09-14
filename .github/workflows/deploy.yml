@@ -15,15 +15,15 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          path: master
+          path: ../../
       - uses: actions/setup-node@v4
         with:
           node-version: 18
 
       - name: Install dependencies
-        run: cd master && npm install
+        run: cd ../ && npm install --legacy-peer-deps
       - name: Build website
-        run: cd master && npm run build
+        run: cd ../ && npm run build
 
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
