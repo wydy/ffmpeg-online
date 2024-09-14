@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: cd master && npm install --legacy-peer-deps
       - name: Build website
-        run: npm run build
+        run: cd master && npm run build
 
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
