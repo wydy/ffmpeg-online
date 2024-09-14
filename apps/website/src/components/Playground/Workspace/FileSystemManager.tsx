@@ -122,7 +122,7 @@ export default function FileSystemManager({
                     <UploadIcon fontSize="small" />
                   </IconButton>
                 </Tooltip>
-                /**<Tooltip title="Create a new folder">
+                /*<Tooltip title="Create a new folder">
                   <IconButton
                     onClick={() => {
                       setDirName("");
@@ -145,7 +145,7 @@ export default function FileSystemManager({
                 </Tooltip>
               </Box>
             </Stack>
-            <Typography>{`Path: ${path}`}</Typography>
+            /*<Typography>{`Path: ${path}`}</Typography>*/
             <List style={{ height: 480, overflowX: "auto" }}>
               {nodes.map(({ name, isDir }, index) =>
                 isDir ? (
