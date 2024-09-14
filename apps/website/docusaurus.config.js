@@ -164,7 +164,7 @@ const config = {
   themes: ["@docusaurus/theme-live-codeblock"],
   scripts: [
     {
-      src: "/static/asset/coi-serviceworker.min.js",
+      src: "/asset/coi-serviceworker.min.js",
       async: false
     },
   ],
