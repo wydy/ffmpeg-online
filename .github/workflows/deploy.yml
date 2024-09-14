@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
       - name: Build website
-        run: npm --prefix /home/runner/work/ffmpeg-online/ffmpeg-online run build
+        run: npm run build
 
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
