@@ -122,7 +122,7 @@ export default function FileSystemManager({
                     <UploadIcon fontSize="small" />
                   </IconButton>
                 </Tooltip>
-                <Tooltip title="Create a new folder">
+                /**<Tooltip title="Create a new folder">
                   <IconButton
                     onClick={() => {
                       setDirName("");
@@ -133,7 +133,7 @@ export default function FileSystemManager({
                   >
                     <CreateNewFolderIcon />
                   </IconButton>
-                </Tooltip>
+                </Tooltip>*/
                 <Tooltip title="Refresh directory">
                   <IconButton
                     onClick={onRefresh}
